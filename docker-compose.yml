@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:12
+    container_name: ms-pagamento
+    environment:
+      POSTGRES_USER: ms-pagamento
+      POSTGRES_PASSWORD: urubu100
+      POSTGRES_DB: db_pagamento
+    ports:
+      - "5435:5432"
